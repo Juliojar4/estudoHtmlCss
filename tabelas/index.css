@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+
+tfoot td, table th {
+    background: #ddd;
+}

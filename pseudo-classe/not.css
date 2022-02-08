@@ -1,0 +1,11 @@
+input:not(:checked) +p {
+    color: darkolivegreen;
+}
+
+ul li:nth-child(odd){
+    background-color:cyan;
+}
+
+ul li:nth-child(even){
+    background-color: rgb(194, 159, 164);
+}

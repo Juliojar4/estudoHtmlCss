@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    justify-content:space-between;
+    flex-flow: row wrap;
+    background-color: yellowgreen;
+}
+
+.flex-item {
+    flex: 1 1 320px; /* O primeiro termo vai receber o dobro de espaços em branco 'flex-grow' o segundo valor o 'flex-shrink' */
+    height: 200px;
+    background-color: yellow;
+    color: aqua;
+}

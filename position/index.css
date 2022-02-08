@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+
+}
+
+nav{
+    position:fixed;
+    padding: 30px;
+    width:100%;
+    background-color:burlywood
+}
+a{
+    position:relative;
+    left: 50%;
+}
+
+.filha1, .filha2{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    position: static
+}
+p {
+    margin-top: 10px;
+}
+
+.filha2 {
+    background-color: greenyellow;
+    float: left;
+    position: relative;
+    top: 300px;
+    left: 50px;
+}
+
+.filha1{
+    position: absolute;
+ 
+}
+
+.outro {
+    position:absolute;
+    font-size: 20px;
+    right: 0;
+}
