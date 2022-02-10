@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-rows:100px 1fr 100px;
+    grid-template-columns: 70px 1fr;
+
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'main nav'
+    'footer footer'
+}
+
+
+.grid div:nth-child(1){
+    background-color:brown;
+    grid-area: cabecalho;
+}
+
+.grid div:nth-child(2){
+    background-color:beige;
+    grid-area: nav;
+}
+
+.grid div:nth-child(3){
+    background-color:aqua;
+    grid-area: main;
+}
+
+.grid div:nth-child(4){
+    background-color:aquamarine;
+    grid-area: footer;
+}

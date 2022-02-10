@@ -1,0 +1,114 @@
+.intro-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gab);
+    height:100vh
+}
+
+.intro-text-content, .intro-img{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.intro-img img {
+    max-width:100%;
+    height:auto
+}
+
+.section-content{
+    max-width: 60rem;
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    height:100vh;
+    text-align: center;
+}
+
+.grid-one-content{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    min-height:100vh;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg)
+}
+
+.grid-one-content-foto{
+    margin-top: 10rem;
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem
+}
+
+.form-group {
+    flex: 1 1 320px
+}
+
+.form-group label{
+    display:block
+}
+
+.form-group textarea,
+.form-group input{
+    border: none;
+    background-color: aliceblue;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-group button {
+    border: 0.5rem solid white;
+    background:none;
+    color: aliceblue;
+    padding: 1.0rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 29px;
+}
+
+.form-group button:hover{
+    background:white;
+    color:var(--primary-color);
+    transition:0.75s
+}
